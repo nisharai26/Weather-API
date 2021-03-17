@@ -1,0 +1,31 @@
+<div class="header"></div>
+
+<h1>Weather </h1>
+
+{{#if data.name}}
+<img src = "http://openweathermap.org/img/wn/{{data.weather.0.icon}}@2x.png">
+
+<p>City Name:{{data.name}}</p>
+
+<p>Temp:{{data.main.temp}}</p>
+
+<p>sunrise:{{data.sys.sunrise}}</p>
+<p>sunset:{{data.sys.sunset}}</p>
+
+<p>wind:{{data.wind.speed}},{{data.wind.deg}}</p>
+
+<p>clouds:{{data.clouds.all}}</p>
+
+  
+
+  {{else}}
+<p>Invalid Input</p>
+{{/if}}
+
+ <form method="POST" action="/">
+<input type="text" name = "city" placeholder="Enter the city">
+<input type="text" name = "countryCode" placeholder="Enter the country code">
+<input type="submit" value="submit">
+</form>
+
+

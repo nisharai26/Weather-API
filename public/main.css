@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+}
+.header{
+  height: 100px;
+    background-image: url('./image.jpeg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
